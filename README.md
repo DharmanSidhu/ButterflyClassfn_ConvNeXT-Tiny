@@ -14,7 +14,7 @@ A Fine-Grained Visual Classification (FGVC) project capable of identifying **100
 | `flutterby.ipynb` | **The Core Code.** End-to-end Jupyter Notebook covering data loading, training, and evaluation. |
 | `butterfly_report_convNeXT.pdf` | Full research report detailing methodology, literature survey, and experimental analysis. |
 | `butterfly_report_convNeXT.docx` | Editable version of the research report. |
-| `flow.drawio` | [Editable System Architecture Diagram](https://drive.google.com/file/d/17nj8DO-HxERcUy4TLfgCE5bALLhNpPCb/view) |
+| `flow.drawio` | [Editable Workflow Diagram](https://drive.google.com/file/d/17nj8DO-HxERcUy4TLfgCE5bALLhNpPCb/view) |
 | `README.md` | Project documentation (this file). |
 
 ---
@@ -37,7 +37,7 @@ We compared our ConvNeXt implementation against published benchmarks on the same
 | :--- | :--- | :--- | :--- |
 | **VGG19** | 143M | 92.80% | -- |
 | **ResNet50** | 25M | 95.00% | -- |
-| **ConvNeXtTiny** | **28M** | -- | **96.XX%** |
+| **ConvNeXtTiny** | **28M** | -- | **96.00%** |
 
 > **Insight:** ConvNeXt achieves higher accuracy than VGG19 while using **80% fewer parameters**, demonstrating the efficiency of modern "Transformer-style" CNN blocks.
 
@@ -60,10 +60,13 @@ If running locally, you need a GPU with at least 4GB VRAM.
 
 ```bash
 # 1. Clone the repo
-git clone [https://github.com/DharmanSidhu/ButterflyClassfn_ConvNeXT-Tiny.git](https://github.com/DharmanSidhu/ButterflyClassfn_ConvNeXT-Tiny.git)
+git clone https://github.com/DharmanSidhu/ButterflyClassfn_ConvNeXT-Tiny.git
 
-# 2. Install dependencies
+# 2. Enter the directory
+cd ButterflyClassfn_ConvNeXT-Tiny
+
+# 3. Install dependencies
 pip install tensorflow matplotlib seaborn scikit-learn kagglehub
 
-# 3. Run the notebook
+# 4. Run the notebook
 jupyter notebook flutterby.ipynb
